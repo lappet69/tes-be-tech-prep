@@ -1,0 +1,35 @@
+# get all product
+GET http://localhost:5000/api/product
+
+###
+# get a product
+GET http://localhost:5000/api/product/62b77e050b870a5ce4d1c699
+Content-Type: application/json
+
+
+### save a product
+POST http://localhost:5000/api/product
+Content-Type: application/json
+
+{
+    "name":"product 2",
+    "price":"500",
+    "imageurl":"https://picsum.photos/200/300"
+
+}
+
+### update product
+PATCH  http://localhost:5000/api/product/62b775202e4dcc8b9f5b56d5
+Content-Type: application/json
+
+{
+    "name":"product 2 ke 2 ",
+    "price":" 5500",
+    "imageurl":"https://picsum.photos/200/300"
+
+}
+### delete product
+DELETE   http://localhost:5000/api/product/62b77b11713c09270af5ad7e
+Content-Type: application/json
+
+
